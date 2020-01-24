@@ -18,6 +18,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatSelectModule} from '@angular/material/select';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 import { HeaderComponent } from './header/header.component';
 import { TdFormComponent } from './td-form/td-form.component';
@@ -55,7 +56,8 @@ import { SubmittedComponent } from './submitted/submitted.component';
     MatListModule,
     MatGridListModule,
     MatAutocompleteModule,
-    MatSelectModule
+    MatSelectModule,
+    DragDropModule
    
   ],
   providers: [],

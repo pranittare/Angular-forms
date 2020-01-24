@@ -21,7 +21,7 @@ export class RFormComponent implements OnInit {
       'firstname': new FormControl(null, [Validators.required, Validators.minLength(3)]),
       'lastname': new FormControl(null, Validators.required),
       'birth': new FormControl(null, [Validators.required]),
-      'task': new FormArray([])
+      'task': new FormArray([], Validators.required)
     });
   }
 
@@ -31,7 +31,6 @@ export class RFormComponent implements OnInit {
   }
   onSubmit(){
     this.transfer.rForms(this.registerForm.value)
-    console.log(this.registerForm.value)
     this.router.navigate(['/submitted']);
     this.registerForm.reset();
 

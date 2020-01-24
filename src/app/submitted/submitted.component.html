@@ -22,13 +22,10 @@
         <p>First Name: {{user.firstname}}</p>
         <p>Last Name: {{user.lastname}}</p>
         <p>Email: {{user.email}}</p>
-        <p>Birth Date: {{user.birth}}</p>
-        <h4>Task Performed</h4>
-        <div *ngFor="let list of user.task; let i = index ">
-            <ul>
-                <li>{{list}}</li>
-            </ul>
-
+        <p>Birth Date: {{user.birth | date}}</p>
+        <h4>Task Priority</h4>
+        <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+            <div class="example-box" *ngFor="let list of user.task; let i = index " cdkDrag>{{list}}</div>
         </div>
     </div>
 </div>
