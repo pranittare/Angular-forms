@@ -72,6 +72,7 @@
             <span *ngIf="registerForm.get('task').invalid && registerForm.get('task').touched">Please enter Valid
                 task</span>
         </div>
+        <hr>
         <button mat-button type="submit" color="primary" [disabled]='registerForm.invalid'>Submit</button>
     </form>
 </div>
