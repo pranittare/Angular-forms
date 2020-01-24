@@ -25,7 +25,7 @@ import { RFormComponent } from './r-form/r-form.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SubmittedComponent } from './submitted/submitted.component';
-import { DataComponent } from './data/data.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +35,6 @@ import { DataComponent } from './data/data.component';
     RFormComponent,
     HomeComponent,
     SubmittedComponent,
-    DataComponent
   ],
   imports: [
     BrowserModule,
