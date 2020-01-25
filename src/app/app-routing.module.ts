@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: 'template', component: TdFormComponent},
   {path:'reactive', component: RFormComponent},
   {path: 'submitted', component: SubmittedComponent},
-  {path:'', component: HomeComponent},
+  {path:'', redirectTo: 'home', pathMatch:'full'},
   {path:'**', component: HomeComponent}
 ];
 
