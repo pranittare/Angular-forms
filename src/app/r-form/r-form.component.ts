@@ -26,8 +26,8 @@ export class RFormComponent implements OnInit {
   }
 
   onAddTask() {
-    const control = new FormControl(null, (Validators.required));
-    (<FormArray>this.registerForm.get('task')).push(control)
+    const controls = new FormControl(null, (Validators.required));
+    (<FormArray>this.registerForm.get('task')).push(controls)
   }
   onSubmit(){
     this.transfer.rForms(this.registerForm.value)
