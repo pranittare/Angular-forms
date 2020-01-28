@@ -57,7 +57,9 @@
         <div class="task" formArrayName="task">
             <label>Task you are going to Perform</label>
             <br>
-            <div *ngFor="let taskcontrol of registerForm.get('task').controls; let i = index">
+            <!-- <div *ngFor="let taskcontrol of registerForm.get('task').controls; let i = index"> -->
+            <div *ngFor="let taskcontrol of forms().controls; let i = index">
+
                 <mat-form-field class="example-full-width">
 
                     <input matInput   [formControlName]="i">
